@@ -54,7 +54,7 @@ async def awaiting_message(client, message):
         )
         return await client.block_user(user_id)
     await message.reply_text(
-        f"Hello, I am {MUSIC_BOT_NAME}'s Assistant.\n\nPlease dont spam here , else you'll get blocked.\nFor more Help start :- @{BOT_USERNAME}"
+        f"ok listen bish, i really don't like chatting to random strangers, just tell the main reason why Came to private chat or my dm protection bot will block your ass ☺️💕..."
     )
 
 
@@ -68,13 +68,13 @@ async def awaiting_message(client, message):
 async def pm_approve(client, message):
     if not message.reply_to_message:
         return await eor(
-            message, text="Reply to a user's message to approve."
+            message, text="Bitch atleast reply to a user's message to approve."
         )
     user_id = message.reply_to_message.from_user.id
     if await is_pmpermit_approved(user_id):
-        return await eor(message, text="User is already approved to pm")
+        return await eor(message, text="Bruh User is already fakin approved to pm")
     await approve_pmpermit(user_id)
-    await eor(message, text="User is approved to pm")
+    await eor(message, text="User is approved to Pm")
 
 
 @Client.on_message(
@@ -87,7 +87,7 @@ async def pm_approve(client, message):
 async def pm_disapprove(client, message):
     if not message.reply_to_message:
         return await eor(
-            message, text="Reply to a user's message to disapprove."
+            message, text="Bitch atleast reply to a user's message to disapprove."
         )
     user_id = message.reply_to_message.from_user.id
     if not await is_pmpermit_approved(user_id):
@@ -148,7 +148,7 @@ async def set_pfp(client, message):
     photo = await message.reply_to_message.download()
     try:
         await client.set_profile_photo(photo=photo)
-        await eor(message, text="Successfully Changed PFP.")
+        await eor(message, text="UwU Successfully Changed PFP.💕")
     except Exception as e:
         await eor(message, text=e)
 
@@ -162,16 +162,16 @@ async def set_pfp(client, message):
 )
 async def set_bio(client, message):
     if len(message.command) == 1:
-        return await eor(message, text="Give some text to set as bio.")
+        return await eor(message, text="Bitch Give some text to set as fakin bio. thanks UwU")
     elif len(message.command) > 1:
         bio = message.text.split(None, 1)[1]
         try:
             await client.update_profile(bio=bio)
-            await eor(message, text="Changed Bio.")
+            await eor(message, text="OwO Changed Bio.💕")
         except Exception as e:
             await eor(message, text=e)
     else:
-        return await eor(message, text="Give some text to set as bio.")
+        return await eor(message, text="Bitch Give some text to set as fakin bio. thanks UwU")
 
 
 async def eor(msg: Message, **kwargs):
