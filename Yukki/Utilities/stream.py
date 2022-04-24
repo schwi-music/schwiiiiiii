@@ -141,7 +141,7 @@ async def start_stream_audio(
     else:
         if not await join_stream(message.chat.id, file):
             return await mystic.edit(
-                "Error Joining Voice Chat. Make sure Voice Chat is Enabled."
+                "Ayo wtf bruh... how'd you expect me to play song if fakin vc not on, what are are you a fakin idiot? "
             )
         get_queue[message.chat.id] = []
         got_queue = get_queue.get(message.chat.id)
@@ -156,7 +156,7 @@ async def start_stream_audio(
             videoid, message.from_user.id, duration_min, duration_min
         )
         await mystic.delete()
-        cap = f"🎥<b>__Playing:__ </b>[Given Audio Via Telegram]({link})\n👤**__Requested by:__** {message.from_user.mention}"
+        cap = f"🎥<b>__Playing:__ </b>[Given Audio Via Telegram]({link})\n🎋**__Requested by:__** {message.from_user.mention}"
         final_output = await message.reply_photo(
             photo="Utils/Telegram.JPEG",
             reply_markup=InlineKeyboardMarkup(buttons),
