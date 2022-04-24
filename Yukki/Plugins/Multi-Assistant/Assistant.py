@@ -47,14 +47,14 @@ async def awaiting_message(client, message):
     else:
         flood[str(user_id)] = 1
     if flood[str(user_id)] > 5:
-        await message.reply_text("Spam Detected. User Blocked")
+        await message.reply_text("i told ya , not show your retardness in dm well.... Blocked")
         await client.send_message(
             LOG_GROUP_ID,
             f"**Spam Detect Block On Assistant**\n\n- **Blocked User:** {message.from_user.mention}\n- **User ID:** {message.from_user.id}",
         )
         return await client.block_user(user_id)
     await message.reply_text(
-        f"ok listen bish, i really don't like chatting to random strangers, just tell the main reason why Came to private chat or my dm protection bot will block your ass ☺️💕..."
+        f"ok listen bish, i really don't like chatting to random strangers, just tell the main reason why Came to private chat or my dm protection bot will block your ass ☺️💕.. @Schwi_Musicbot 🦋✨."
     )
 
 
