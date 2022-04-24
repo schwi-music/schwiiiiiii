@@ -36,11 +36,11 @@ __MODULE__ = "Admin"
 __HELP__ = """
 
 
-/pause - Pause the playing music on voice chat.
+/pause - Pause the Fakin music on voice chat ,, bruh honestly explaination not needed.
 
-/resume - Resume the paused music on voice chat.
+/resume - Resume the paused music on voice chat,, obvious one -_-.
 
-/skip - Skip the current playing music on voice chat
+/skip - Skip the current playing music on voice chat, only handsome admins and auth users 
 
 /stop - Stop the playout.
 
@@ -57,15 +57,15 @@ __HELP__ = """
 async def admins(_, message: Message):
     global get_queue
     if not len(message.command) == 1:
-        return await message.reply_text("Error! Wrong Usage of Command.")
+        return await message.reply_text("Error! Wrong Usage of Command...hehe fakin noob.")
     if not await is_active_chat(message.chat.id):
         return await message.reply_text(
-            "Nothing is playing on voice chat. No Active Voice Chat Found"
+            "Nothing is playing on voice chat bruh -_- No Active Voice ¯\_(ツ)_/¯"
         )
     chat_id = message.chat.id
     if message.command[0][1] == "a":
         if not await is_music_playing(message.chat.id):
-            return await message.reply_text("Music is already Paused.")
+            return await message.reply_text("Music is already Paused bitch.")
         await music_off(chat_id)
         await pause_stream(chat_id)
         await message.reply_text(
@@ -73,7 +73,7 @@ async def admins(_, message: Message):
         )
     if message.command[0][1] == "e":
         if await is_music_playing(message.chat.id):
-            return await message.reply_text("Music is already Playing.")
+            return await message.reply_text("Already Playing music bish")
         await music_on(chat_id)
         await resume_stream(chat_id)
         await message.reply_text(
@@ -104,7 +104,7 @@ async def admins(_, message: Message):
             await remove_active_chat(chat_id)
             await remove_active_video_chat(chat_id)
             await message.reply_text(
-                "No more music in __Queue__ \n\nLeaving Voice Chat"
+                "No more Fakin music in __Queue__ (ノ｀Д´)ノ彡┻━┻ \n\nLeaving Voice Chat 🎋 "
             )
             await stop_stream(chat_id)
             return
