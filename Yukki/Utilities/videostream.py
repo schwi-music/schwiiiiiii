@@ -52,7 +52,7 @@ async def start_stream_video(message, file, title, mystic):
         final_output = await message.reply_photo(
             photo="Utils/Telegram.JPEG",
             caption=(
-                f"🎬<b>__Video:__ </b> [Given Video Via Telegram]({link})\n\n👤<b>__Requested by:__ </b>{message.from_user.mention} \n🚧<b>__Queued at:__</b> <b>#{position}!</b>"
+                f"🎬<b>__Video:__ </b> [Given Video Via Telegram]({link})\n\n🎋<b>__Requested by:__ </b>{message.from_user.mention} \n🚧<b>__Queued at:__</b> <b>#{position}!</b>"
             ),
             reply_markup=audio_markup2,
         )
@@ -61,7 +61,7 @@ async def start_stream_video(message, file, title, mystic):
     else:
         if not await join_video_stream(message.chat.id, file, 720):
             return await mystic.edit(
-                "Error Joining Voice Chat. Make sure Voice Chat is Enabled."
+                "Ayo wtf bruh... how'd you expect me to play song if fakin vc not on, what are are you a fakin idiot? "
             )
         get_queue[message.chat.id] = []
         got_queue = get_queue.get(message.chat.id)
@@ -75,7 +75,7 @@ async def start_stream_video(message, file, title, mystic):
         await add_active_video_chat(message.chat.id)
         buttons = secondary_markup2("Smex1", message.from_user.id)
         await mystic.delete()
-        cap = f"🎥<b>__Playing:__ </b>[Given Video Via Telegram]({link})\n👤**__Requested by:__** {message.from_user.mention}"
+        cap = f"🎥<b>__Playing:__ </b>[Given Video Via Telegram]({link})\n🎋**__Requested by:__** {message.from_user.mention}"
         final_output = await message.reply_photo(
             photo="Utils/Telegram.JPEG",
             reply_markup=InlineKeyboardMarkup(buttons),
