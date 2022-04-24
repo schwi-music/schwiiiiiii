@@ -118,7 +118,7 @@ async def initiate_bot():
         try:
             await ASS_CLI_1.send_message(
                 LOG_GROUP_ID,
-                "<b>Congrats!! Assistant Client 1  has started successfully!</b>",
+                "<b> A1...✅ </b>",
             )
         except Exception as e:
             print(
@@ -127,8 +127,8 @@ async def initiate_bot():
             console.print(f"\n[red]Stopping Bot")
             return
         try:
-            await ASS_CLI_1.join_chat("OfficialYukki")
-            await ASS_CLI_1.join_chat("YukkiSupport")
+            await ASS_CLI_1.join_chat("Anime_Hub_Fz")
+            await ASS_CLI_1.join_chat("Anime_com_Chat")
         except:
             pass
         console.print(f"├[red] Assistant 1 Started as {ASSNAME1}!")
@@ -137,7 +137,7 @@ async def initiate_bot():
         try:
             await ASS_CLI_2.send_message(
                 LOG_GROUP_ID,
-                "<b>Congrats!! Assistant Client 2 has started successfully!</b>",
+                "<b> A2...✅ </b>",
             )
         except Exception as e:
             print(
@@ -146,8 +146,8 @@ async def initiate_bot():
             console.print(f"\n[red]Stopping Bot")
             return
         try:
-            await ASS_CLI_2.join_chat("OfficialYukki")
-            await ASS_CLI_2.join_chat("YukkiSupport")
+            await ASS_CLI_2.join_chat("Anime_Hub_Fz")
+            await ASS_CLI_2.join_chat("Anime_com_Chat")
         except:
             pass
         console.print(f"├[red] Assistant 2 Started as {ASSNAME2}!")
@@ -156,7 +156,7 @@ async def initiate_bot():
         try:
             await ASS_CLI_3.send_message(
                 LOG_GROUP_ID,
-                "<b>Congrats!! Assistant Client 3 has started successfully!</b>",
+                "<b> A3...✅ </b>",
             )
         except Exception as e:
             print(
@@ -165,8 +165,8 @@ async def initiate_bot():
             console.print(f"\n[red]Stopping Bot")
             return
         try:
-            await ASS_CLI_3.join_chat("OfficialYukki")
-            await ASS_CLI_3.join_chat("YukkiSupport")
+            await ASS_CLI_3.join_chat("Anime_Hub_Fz")
+            await ASS_CLI_3.join_chat("Anime_com_Chat")
         except:
             pass
         console.print(f"├[red] Assistant 3 Started as {ASSNAME3}!")
@@ -175,7 +175,7 @@ async def initiate_bot():
         try:
             await ASS_CLI_4.send_message(
                 LOG_GROUP_ID,
-                "<b>Congrats!! Assistant Client 4 has started successfully!</b>",
+                "<b> A4...✅ </b>",
             )
         except Exception as e:
             print(
@@ -184,8 +184,8 @@ async def initiate_bot():
             console.print(f"\n[red]Stopping Bot")
             return
         try:
-            await ASS_CLI_4.join_chat("OfficialYukki")
-            await ASS_CLI_4.join_chat("YukkiSupport")
+            await ASS_CLI_4.join_chat("Anime_Hub_Fz")
+            await ASS_CLI_4.join_chat("Anime_com_Chat")
         except:
             pass
         console.print(f"├[red] Assistant 4 Started as {ASSNAME4}!")
@@ -194,7 +194,7 @@ async def initiate_bot():
         try:
             await ASS_CLI_5.send_message(
                 LOG_GROUP_ID,
-                "<b>Congrats!! Assistant Client 5 has started successfully!</b>",
+                "<b> A5...✅ </b>",
             )
         except Exception as e:
             print(
@@ -203,8 +203,8 @@ async def initiate_bot():
             console.print(f"\n[red]Stopping Bot")
             return
         try:
-            await ASS_CLI_5.join_chat("OfficialYukki")
-            await ASS_CLI_5.join_chat("YukkiSupport")
+            await ASS_CLI_5.join_chat("Anime_Hub_Fz")
+            await ASS_CLI_5.join_chat("Anime_com_Chat")
         except:
             pass
         console.print(f"├[red] Assistant 5 Started as {ASSNAME5}!")
@@ -222,8 +222,8 @@ async def initiate_bot():
             console.print(f"\n[red]Stopping Bot")
             return
         try:
-            await LOG_CLIENT.join_chat("OfficialYukki")
-            await LOG_CLIENT.join_chat("YukkiSupport")
+            await LOG_CLIENT.join_chat("Anime_Hub_Fz")
+            await LOG_CLIENT.join_chat("Anime_com_Chat")
         except:
             pass
     console.print(f"└[red] Yukki Music Bot Boot Completed.")
@@ -242,10 +242,10 @@ async def initiate_bot():
 
 
 home_text_pm = f"""Hello ,
-My name is {BOT_NAME}.
-A Telegram Music+Video Streaming bot with some useful features.
+Hi! I'm {BOT_NAME} 💕.
+An Ex-Machina... I can't sing but i can help u playing Songs in VC. 🖥️🎶
 
-All commands can be used with: / """
+Onii-Chan - @Lord_DSP_3 🎋 """
 
 
 @app.on_message(filters.command("help") & filters.private)
@@ -326,16 +326,16 @@ async def start_command(_, message):
             searched_text = f"""
 🔍__**Video Track Information**__
 
-❇️**Title:** {title}
+🖥️**Title:** {title}
 
-⏳**Duration:** {duration} Mins
-👀**Views:** `{views}`
-⏰**Published Time:** {published}
-🎥**Channel Name:** {channel}
-📎**Channel Link:** [Visit From Here]({channellink})
-🔗**Video Link:** [Link]({link})
+🎋**Duration:** {duration} Mins
+🩸**Views:** `{views}`
+🦋**Published Time:** {published}
+🎋**Channel Name:** {channel}
+🩸**Channel Link:** [Visit From Here]({channellink})
+🦋**Video Link:** [Link]({link})
 
-⚡️ __Searched Powered By {BOT_NAME}__"""
+🖥️✨ __Searched Powered By {BOT_NAME}__"""
             key = InlineKeyboardMarkup(
                 [
                     [
@@ -392,11 +392,11 @@ async def help_parser(name, keyboard=None):
     if not keyboard:
         keyboard = InlineKeyboardMarkup(paginate_modules(0, HELPABLE, "help"))
     return (
-        """Hello {first_name},
+        """Hey Bitch {first_name},
 
-Click on the buttons for more information.
+Every Cammand is so fucking simple,Just what trying to do 🔪.
 
-All commands can be used with: /
+Report error - @Lord_DSP_3 (you can also send your Girlfriend's nudes🤙.
 """.format(
             first_name=name
         ),
@@ -441,7 +441,7 @@ All commands can be used with: /
                 pass
             else:
                 return await query.answer(
-                    "This Button can only be accessed by SUDO USERS",
+                    "This Feature Can't be accessed by fakin normie like you 🎴🔒",
                     show_alert=True,
                 )
         text = (
@@ -454,10 +454,10 @@ All commands can be used with: /
             [
                 [
                     InlineKeyboardButton(
-                        text="↪️ Back", callback_data="help_back"
+                        text="🩸 Back", callback_data="help_back"
                     ),
                     InlineKeyboardButton(
-                        text="🔄 Close", callback_data="close"
+                        text="🩸 Close", callback_data="close"
                     ),
                 ],
             ]
