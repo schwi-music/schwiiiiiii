@@ -33,7 +33,7 @@ async def auth(_, message: Message):
     if not message.reply_to_message:
         if len(message.command) != 2:
             await message.reply_text(
-                "Reply to a user's message or give username/user_id."
+                "Reply to a user's message or give username/user_id... haha fakin idiot UwU "
             )
             return
         user = message.text.split(None, 1)[1]
@@ -61,11 +61,11 @@ async def auth(_, message: Message):
             }
             await save_authuser(message.chat.id, token, assis)
             await message.reply_text(
-                f"Added to Authorised Users List of this group."
+                f"OwO Added to Authorised Users List of this group."
             )
             return
         else:
-            await message.reply_text(f"Already in the Authorised Users List.")
+            await message.reply_text(f"Already in the Authorised Users List.ಠ◡ಠ chutiya ?")
         return
     from_user_id = message.from_user.id
     user_id = message.reply_to_message.from_user.id
@@ -93,7 +93,7 @@ async def auth(_, message: Message):
         )
         return
     else:
-        await message.reply_text(f"Already in the Authorised Users List.")
+        await message.reply_text(f"Already in the Authorised Users List.ಠ◡ಠ chutiya ?")
 
 
 @app.on_message(filters.command("unauth") & filters.group)
@@ -102,7 +102,7 @@ async def whitelist_chat_func(_, message: Message):
     if not message.reply_to_message:
         if len(message.command) != 2:
             await message.reply_text(
-                "Reply to a user's message or give username/user_id."
+                "Reply to a user's message or give username/user_id... haha fakin idiot UwU "
             )
             return
         user = message.text.split(None, 1)[1]
