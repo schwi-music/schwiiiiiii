@@ -104,7 +104,7 @@ async def admins(_, message: Message):
             await remove_active_chat(chat_id)
             await remove_active_video_chat(chat_id)
             await message.reply_text(
-                "No more Fakin music in __Queue__ (ノ｀Д´)ノ彡┻━┻ \n\nLeaving Voice Chat 🎋 "
+                "No more music in __Queue__ (ノ｀Д´)ノ彡┻━┻ \n\nAssistant leave the fakin Voice Chat (ಠ_ಠ)>⌐■-■ "
             )
             await stop_stream(chat_id)
             return
@@ -149,7 +149,7 @@ async def admins(_, message: Message):
                 final_output = await message.reply_photo(
                     photo=thumb,
                     reply_markup=InlineKeyboardMarkup(buttons),
-                    caption=f"<b>__Skipped Voice Chat__</b>\n\n🎥<b>__Started Playing:__</b> {title} \n⏳<b>__Duration:__</b> {duration_min} \n👤<b>__Requested by:__ </b> {mention}",
+                    caption=f"<b>__Skipped Voice Chat__</b>\n\n🎥<b>__Started Playing:__</b> {title} \n⏳<b>__Duration:__</b> {duration_min} \n🎋<b>__Requested by:__ </b> {mention}",
                 )
                 await start_timer(
                     videoid,
@@ -162,7 +162,7 @@ async def admins(_, message: Message):
                 )
             elif str(finxx) == "s1s":
                 mystic = await message.reply_text(
-                    "Skipped.. Changing to next Video Stream."
+                    "Skipped retarded video... Moving to the good part.(⌐■-■)"
                 )
                 afk = videoid
                 read = (str(videoid)).replace("s1s_", "", 1)
@@ -174,7 +174,7 @@ async def admins(_, message: Message):
                         await skip_video_stream(chat_id, videoid, 720, mystic)
                     except Exception as e:
                         return await mystic.edit(
-                            f"Error while changing video stream.\n\nPossible Reason:- {e}"
+                            f"Shit happened while changing video stream.\n\nPossible Reason:- {e}"
                         )
                     buttons = secondary_markup2("Smex1", message.from_user.id)
                     mention = db_mem[afk]["username"]
@@ -183,7 +183,7 @@ async def admins(_, message: Message):
                         photo="Utils/Telegram.JPEG",
                         reply_markup=InlineKeyboardMarkup(buttons),
                         caption=(
-                            f"<b>__Skipped Video Chat__</b>\n\n👤**__Requested by:__** {mention}"
+                            f"<b>__Skipped Video Chat__</b>\n\n🎋**__Requested by:__** {mention}"
                         ),
                     )
                     await mystic.delete()
@@ -205,7 +205,7 @@ async def admins(_, message: Message):
                         )
                     except Exception as e:
                         return await mystic.edit(
-                            f"Error while changing video stream.\n\nPossible Reason:- {e}"
+                            f"Shit happened while changing video stream.\n\nPossible Reason:- {e}"
                         )
                     theme = await check_theme(chat_id)
                     c_title = message.chat.title
