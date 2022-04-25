@@ -61,13 +61,13 @@ async def play(_, message: Message):
     url = get_url(message)
     if audio:
         mystic = await message.reply_text(
-            "🔄 Processing Audio... Please Wait!"
+            "Wait bish! Processing Audio..."
         )
         try:
             read = db_mem[message.chat.id]["live_check"]
             if read:
                 return await mystic.edit(
-                    "Live Streaming Playing...Stop it to play music"
+                    "Live Streaming Playing...Stop it to play music...haha fakin idiot (⌐■-■) "
                 )
             else:
                 pass
@@ -75,7 +75,7 @@ async def play(_, message: Message):
             pass
         if audio.file_size > 1073741824:
             return await mystic.edit_text(
-                "Audio File Size Should Be Less Than 150 mb"
+                "Audio File Size Should Be Less Than 150 mb (╯ರ ~ ರ)╯︵ ┻━┻"
             )
         duration_min = seconds_to_min(audio.duration)
         duration_sec = audio.duration
@@ -122,13 +122,13 @@ async def play(_, message: Message):
                     "Sorry! Bot only allows limited number of video calls due to CPU overload issues. Many other chats are using video call right now. Try switching to audio or try again later"
                 )
         mystic = await message.reply_text(
-            "🔄 Processing Video... Please Wait!"
+            "Bish Wait! Processing Video..."
         )
         try:
             read = db_mem[message.chat.id]["live_check"]
             if read:
                 return await mystic.edit(
-                    "Live Streaming Playing...Stop it to play music"
+                    "Live Streaming Playing...Stop it to play music... haha Fakin idiot (⌐■-■)"
                 )
             else:
                 pass
@@ -138,11 +138,11 @@ async def play(_, message: Message):
         return await start_stream_video(
             message,
             file,
-            "Given Video Via Telegram",
+            "Given Video Via Telegram (ノ•̀ o •́ )ノ ~ ┻━┻",
             mystic,
         )
     elif url:
-        mystic = await message.reply_text("🔄 Processing URL... Please Wait!")
+        mystic = await message.reply_text("Bish Wait! Processing URL...")
         if not message.reply_to_message:
             query = message.text.split(None, 1)[1]
         else:
@@ -169,7 +169,7 @@ async def play(_, message: Message):
             await message.reply_photo(
                 photo="Utils/Playlist.jpg",
                 caption=(
-                    "**Usage:** /play [Music Name or Youtube Link or Reply to Audio]\n\nIf you want to play Playlists! Select the one from Below."
+                    "**Usage:** /play [Music Name or Youtube Link or Reply to Audio (ಠ_ಠ)>⌐■-■ Nooob ]\n\nIf you want to play Playlists! Select the one from Below."
                 ),
                 reply_markup=InlineKeyboardMarkup(buttons),
             )
@@ -222,7 +222,7 @@ async def Music_Stream(_, CallbackQuery):
         )
     if CallbackQuery.from_user.id != int(user_id):
         return await CallbackQuery.answer(
-            "This is not for you! Please search You Own Song.",
+            "This is not for you Bitch!  search Your Own Song bruh. (ಠ_ಠ)>⌐■-■",
             show_alert=True,
         )
     await CallbackQuery.message.delete()
@@ -233,7 +233,7 @@ async def Music_Stream(_, CallbackQuery):
         )
     await CallbackQuery.answer(f"Processing:- {title[:20]}", show_alert=True)
     mystic = await CallbackQuery.message.reply_text(
-        f"**{MUSIC_BOT_NAME} Downloader**\n\n**Title:** {title[:50]}\n\n0% ▓▓▓▓▓▓▓▓▓▓▓▓ 100%"
+        f"**{MUSIC_BOT_NAME} Downloader**\n\n**Title:** {title[:50]}\n\n0% ▓▓▓▓▓▓▓▓▓▓▓▓ 𝔻𝕊ℙ 100%"
     )
     downloaded_file = await loop.run_in_executor(
         None, download, videoid, mystic, title
@@ -355,7 +355,7 @@ async def slider_query_results(_, CallbackQuery):
     what, type, query, user_id = callback_request.split("|")
     if CallbackQuery.from_user.id != int(user_id):
         return await CallbackQuery.answer(
-            "Search Your Own Music. You're not allowed to use this button.",
+            "Search Your Own Music bish. You're not allowed to use this button.(ノ•̀ o •́ )ノ ~ ┻━┻",
             show_alert=True,
         )
     what = str(what)
