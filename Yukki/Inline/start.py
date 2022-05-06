@@ -55,7 +55,7 @@ def start_pannel():
             ],
             [
                 InlineKeyboardButton(
-                    text="📨Support Group", url=f"{SUPPORT_GROUP}"
+                    text="🎋Anime Chat Group🎋", url=f"{SUPPORT_GROUP}"
                 ),
             ],
         ]
@@ -74,7 +74,7 @@ def start_pannel():
             ],
             [
                 InlineKeyboardButton(
-                    text="📨Official Channel", url=f"{SUPPORT_CHANNEL}"
+                    text="🦋Anime Channel🦋", url=f"{SUPPORT_CHANNEL}"
                 ),
             ],
         ]
@@ -93,10 +93,10 @@ def start_pannel():
             ],
             [
                 InlineKeyboardButton(
-                    text="📨Official Channel", url=f"{SUPPORT_CHANNEL}"
+                    text="🦋Anime Channel🦋", url=f"{SUPPORT_CHANNEL}"
                 ),
                 InlineKeyboardButton(
-                    text="📨Support Group", url=f"{SUPPORT_GROUP}"
+                    text="🎋Anime Chat Group🎋", url=f"{SUPPORT_GROUP}"
                 ),
             ],
         ]
@@ -136,7 +136,7 @@ def private_panel():
             ],
             [
                 InlineKeyboardButton(
-                    text="📨Support Group", url=f"{SUPPORT_GROUP}"
+                    text="🎋Anime Chat Group🎋", url=f"{SUPPORT_GROUP}"
                 ),
             ],
         ]
@@ -157,7 +157,7 @@ def private_panel():
             ],
             [
                 InlineKeyboardButton(
-                    text="📨Official Channel", url=f"{SUPPORT_CHANNEL}"
+                    text="🦋Anime Channel🦋", url=f"{SUPPORT_CHANNEL}"
                 ),
             ],
         ]
@@ -178,10 +178,10 @@ def private_panel():
             ],
             [
                 InlineKeyboardButton(
-                    text="📨Official Channel", url=f"{SUPPORT_CHANNEL}"
+                    text="🦋Anime Channel🦋", url=f"{SUPPORT_CHANNEL}"
                 ),
                 InlineKeyboardButton(
-                    text="📨Support Group", url=f"{SUPPORT_GROUP}"
+                    text="🎋Anime  Chat Group🎋", url=f"{SUPPORT_GROUP}"
                 ),
             ],
         ]
@@ -196,15 +196,15 @@ def setting_markup():
         ],
         [
             InlineKeyboardButton(
-                text="👥 Authorized Users", callback_data="AU"
+                text="💕Authorized Users", callback_data="AU"
             ),
             InlineKeyboardButton(
                 text="💻 Dashboard", callback_data="Dashboard"
             ),
         ],
         [
-            InlineKeyboardButton(text="✖️ Close", callback_data="close"),
-            InlineKeyboardButton(text="🔙 Go Back", callback_data="okaybhai"),
+            InlineKeyboardButton(text="🩸Close🩸", callback_data="close"),
+            InlineKeyboardButton(text="💧Go Back💧", callback_data="okaybhai"),
         ],
     ]
     return f"🔧  **{MUSIC_BOT_NAME} Settings**", buttons
@@ -257,15 +257,15 @@ def custommarkup():
 def usermarkup():
     buttons = [
         [
-            InlineKeyboardButton(text="👥 Everyone", callback_data="EVE"),
-            InlineKeyboardButton(text="🙍 Admins", callback_data="AMS"),
+            InlineKeyboardButton(text="💕 Everyone", callback_data="EVE"),
+            InlineKeyboardButton(text="🀄 Admins", callback_data="AMS"),
         ],
         [
             InlineKeyboardButton(
                 text="📋 Authorized Users Lists", callback_data="USERLIST"
             )
         ],
-        [InlineKeyboardButton(text="🔙 Go back", callback_data="settingm")],
+        [InlineKeyboardButton(text="🎴Go back🎴", callback_data="settingm")],
     ]
     return f"🔧  **{MUSIC_BOT_NAME} Settings**", buttons
 
@@ -280,6 +280,6 @@ def dashmarkup():
             InlineKeyboardButton(text="💻 Cpu", callback_data="CPT"),
             InlineKeyboardButton(text="💽 Disk", callback_data="DIT"),
         ],
-        [InlineKeyboardButton(text="🔙 Go back", callback_data="settingm")],
+        [InlineKeyboardButton(text="🩸Go back🩸", callback_data="settingm")],
     ]
     return f"🔧  **{MUSIC_BOT_NAME} Settings**", buttons
