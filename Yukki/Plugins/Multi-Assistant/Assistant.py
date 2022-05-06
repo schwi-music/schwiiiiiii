@@ -47,14 +47,14 @@ async def awaiting_message(client, message):
     else:
         flood[str(user_id)] = 1
     if flood[str(user_id)] > 5:
-        await message.reply_text("i told ya , not show your retardness in dm well.... Blocked")
+        await message.reply_text("You exceed the limited number of message in dm🎋 Blocked 🎋 wait for me to come online 💕")
         await client.send_message(
             LOG_GROUP_ID,
             f"**Spam Detect Block On Assistant**\n\n- **Blocked User:** {message.from_user.mention}\n- **User ID:** {message.from_user.id}",
         )
         return await client.block_user(user_id)
     await message.reply_text(
-        f"ok listen bish, i really don't like chatting to random strangers, just tell the main reason why Came to private chat or my dm protection bot will block your ass ☺️💕.. @Schwi_Musicbot 🦋✨."
+        f"https://telegra.ph/file/300399c873525d089eb52.jpg       💕🎋 Hey this is high level protection spell castest Jibril to avoid stranger from SPAMMING in my Dm... you have limited number of chances,just come to the main reason why message me🦊(OR YOU'LL GET BLOCKED BY SPELL)🦊if you want to chat @Anime_Gaming_Chat_Global Join!💕🎋 "
     )
 
 
