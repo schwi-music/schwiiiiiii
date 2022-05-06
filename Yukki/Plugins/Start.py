@@ -85,7 +85,7 @@ async def useradd(_, message: Message):
     await asyncio.gather(
         message.delete(),
         message.reply_text(
-            f"https://telegra.ph/file/466b79ea3804ce33e731d.mp4 Thanks for having me in {message.chat.title}.\n{MUSIC_BOT_NAME} is alive.\n\nFor any assistance or help, Made by -𝕃𝕠𝕣𝕕_𝔻𝕊ℙ_𝟛.",
+            f"https://telegra.ph/file/466b79ea3804ce33e731d.mp4          💕🎋Thanks for having me in {message.chat.title}.\n{MUSIC_BOT_NAME} is alive.\n\n Owner -𝕃𝕠𝕣𝕕_𝔻𝕊ℙ_𝟛.",
             reply_markup=InlineKeyboardMarkup(out[1]),
         ),
     )
