@@ -15,27 +15,27 @@
   "env": {
     "API_ID": {
       "description": "Get this value from https://my.telegram.org",
-      "value": "",
+      "value": "18788741",
       "required": true
     },
     "API_HASH": {
       "description": "Get this value from https://my.telegram.org",
-      "value": "",
+      "value": "23ed361f740284b743b45bd9904e19b8",
       "required": true
     },
     "BOT_TOKEN": {
       "description": "A Bot's token from Botfather",
-      "value": "",
+      "value": "5024837423:AAGAi54Di5ImEYEOQM1fNkT_ZnEUPpK5Iq4",
       "required": true
     },
     "DURATION_LIMIT": {
       "description": "Duration Limit for Playout (In Mins).. Example: 60",
-      "value": "60",
+      "value": "360",
       "required": true
     },
     "ASSISTANT_PREFIX": {
       "description": "Prefix for Assistant Commands.",
-      "value": ".",
+      "value": "/",
       "required": true
     },
     "MONGO_DB_URI": {
@@ -45,27 +45,27 @@
     },
     "MUSIC_BOT_NAME": {
       "description": "A name for your Music Bot.",
-      "value": "",
+      "value": "@Schwi_Musicbot",
       "required": true
     },
     "SUPPORT_CHANNEL": {
       "description": "Support Channel Link if you have any, Leave blank if no support. Your link must start with https://t.me/",
-      "value": "",
+      "value": "https://t.me/Anime_Hub_Fz",
       "required": false
     },
     "SUPPORT_GROUP": {
       "description": "Support Group Link if you have any, Leave blank if no support. Your link must start with https://t.me/",
-      "value": "",
+      "value": "https://t.me/+LuNfF7pzIggyNWE1",
       "required": false
     },
     "OWNER_ID": {
       "description": "The user id(s) of user(s) whom you would like to add as a OWNER. Multiple values shall be seperated with a space.",
-      "value": "",
+      "value": "1302714537",
       "required": true
     },
     "START_IMG_URL": {
       "description": "Telegraph Image Link for the Private Start Message",
-      "value": "",
+      "value": "https://telegra.ph/file/834837fb4ad0c1b6bb262.jpg",
       "required": false
     },
     "STRING_SESSION1": {
@@ -105,12 +105,12 @@
     },
     "LOG_GROUP_ID": {
       "description": "Your Log Group ID, add your bot and promote as an admin with full rights!. Use only Group. Please don't use Channel ID.",
-      "value": "",
+      "value": "-1001686630791",
       "required": true
     },
     "SUDO_USERS": {
       "description": "The user id(s) of user(s) whom you would like to add as a SUDO. Multiple values shall be seperated with a space.",
-      "value": "",
+      "value": "5354699902 5024635090  5222344305 5142693914 1497264683",
       "required": true
     },
     "LOG_SESSION": {
@@ -120,7 +120,7 @@
     },
     "UPSTREAM_REPO": {
       "description": "If you dont know this, Leave as it is",
-      "value": "https://github.com/NotReallyShikhar/YukkiMusicBot",
+      "value": "https://github.com/Lord-DSP3/Schwi_selfmade",
       "required": true
     },
     "UPSTREAM_BRANCH": {
